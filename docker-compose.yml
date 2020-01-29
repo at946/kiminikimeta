@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    # image: # Your container registry name.
+    environment:
+      - SLACK_SIGNING_SECRET=[Your Signing Secret]
+      - SLACK_BOT_TOKEN=[Your Bot User OAuth Access Token]
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000

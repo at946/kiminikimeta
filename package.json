@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@at946",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^1.5.0"
+  }
+}
