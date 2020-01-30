@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    # image: # Your container registry name.
+    image: asia.gcr.io/raftel-d/kiminikimeta
+    environment:
+      - SLACK_SIGNING_SECRET=[Your Signing Secret]
+      - SLACK_BOT_TOKEN=[Your Bot User OAuth Access Token]
+      #- SLACK_SIGNING_SECRET=bdda2710044bec2f86e84f0f7fddc85f
+      #- SLACK_BOT_TOKEN=xoxb-257988023811-915903033346-0kzgh2qLZpBDUlrA0gwuvqdD
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000

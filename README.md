@@ -16,6 +16,20 @@ $ docker-compose run app npm install
 $ docker-compose up
 ```
 
+# How to command
+Input
+
+```
+/kiminikimeta [text]
+```
+
+Output
+
+```
+[text]
+@[random user]、キミに決めた！
+```
+
 # Articles
 このアプリやSlack appの作り方などについては以下の記事にまとめてます。
 

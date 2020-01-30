@@ -23,7 +23,7 @@ app.command('/kiminikimeta', async ({ command, ack, say, context }) => {
     
     // Bot以外のユーザーから1つをランダムで選び、Channelに投稿する
     const member = members[Math.floor(Math.random() * members.length)];
-    say(`<@${member}>、キミに決めた！`);
+    say(`${command.text}\n<@${member}>、キミに決めた！`);
   } catch (error) {
     console.log(error);
   }
